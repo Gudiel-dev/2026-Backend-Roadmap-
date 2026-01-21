@@ -139,4 +139,3 @@ JavaScript-Journey/
 ## Day 1: Operators
 - Arithmetic: `+ - * / % **`
 - Comparison: `== !== === !== > < >= <=`
-
