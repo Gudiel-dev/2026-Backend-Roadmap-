@@ -1,20 +1,17 @@
 /* Fundamentals.js */
 
-// Declaring a string
+console.log('----> Initializing variables <----');
+console.log('==================================='+'\n');
+// Declaring / initializing the variable
 let nombre = 'Vis Catenicus';
-// console.log( nombre );
+console.log( `Original Character's name: ${nombre}` );
 
-
-// Changing the variable's value
+// Reassigning the variable
 nombre = 'Aequa Claudius';
 // console.log( nombre );
 
-nombre = 'Emisa Corenius';
-console.log( nombre );
-
-//cecking the type of variable
-
-console.log( typeof nombre );
+// Reassigning + printing its type
+console.log(`New character's name: ${nombre} and its typeof: ` + typeof nombre + "\n");
 //prints a string. 
 
 let num1 = 1;
