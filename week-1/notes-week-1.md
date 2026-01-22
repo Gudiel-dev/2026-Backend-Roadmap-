@@ -57,3 +57,21 @@ const isActive = true;
 
 
 ```
+
+
+## 🔢 Arrays
+
+**Declaration:**
+```javascript
+let arr =;[1][2][3]
+let mixed = [1, 'text', true];  // Can mix types
+
+Key methods:
+	•	 push()  - Add to end
+	•	 pop()  - Remove from end
+	•	 unshift()  - Add to start
+	•	 shift()  - Remove from start
+	•	 indexOf()  - Find position
+	•	 includes()  - Check if exists
+	•	 .length  - Get size
+Access:  arr  (0-indexed)

@@ -55,5 +55,72 @@ let myFunction = "test";
 console.log('\n');
 
 console.log('===========================================');
-console.log('----------------> Arrays <-----------------');
+console.log('---------------> Arrays I <----------------');
 console.log('==========================================='+'\n');
+
+// Here we are initializing an array with 10 items
+// const arr1 = new Array(10);
+// console.log(`This is an array with 10 itmes: ${arr1}`);
+
+// While here, were are initializing an empty array
+// const arr2 = [];
+// console.log(`This is an empty array ${arr2}`);
+// console.log(arr2);
+
+let pokemons = ['Bulbasaur', 'Charmander', 'Squirtle', 'Pikachu'];
+// To actually print the array we use brackets {}
+console.log({pokemons});
+
+// Priting the first element of the Array
+console.log(`1st Pokemon of the list is: ${pokemons[0]}\n`);
+// Being Bulbasaur the first one having the index 0
+
+//Array of stuff
+let arrayStuff = [
+    true,
+    123,
+    'Charmander',
+    2 + 2,
+    function(){},
+    ()=>{},
+    { a: 1 },
+    ['Ash', 'Misty', 'Team-Rocket',['Jessie','James','Meowth']]
+]
+console.log(`Array "arrayStuff" has ${arrayStuff.length} items: `);
+console.log(arrayStuff);
+
+// Exersices
+console.log(`Let's defeat the Team-Rocket from the array, hurry up!`);
+console.log(`The ${arrayStuff[7][2]} has been defeated again. Good job!\n`);
+console.log(`Now, let's interview ${arrayStuff[7][3][3]} so he would tell us how he's learnt to speak`);
+console.log('\n');
+
+
+console.log('===========================================');
+console.log('---------------> Arrays II <---------------');
+console.log('==========================================='+'\n');
+//Properties and basic arrays' methods
+
+let pokemonsFire = ['Charmander', 'Charizard', 'Vulpix', 'Arcanine', 'Flareon', 'Moltres', 'Typhlosion', 'Torchic', 'Infernape', 'Emboar'];
+// Gotta Catch 'Em All
+console.log(`I've captured: ${pokemonsFire.length} pokemons of fire!!`);
+console.table(pokemonsFire);
+
+//First pokemon of the array
+let firstPokemon = pokemonsFire[0];
+console.log(`The first pokemom is: ${firstPokemon}`);
+
+// Last pokemon of the list
+let lastPokemon = pokemonsFire[pokemonsFire.length-1];
+console.log(`The last pokemom is: ${lastPokemon}`);
+
+// Array and for-each 
+pokemonsFire.forEach((Element, index, arr) => {
+    console.log({Element, index, arr});
+});
+
+//Add an item to the array
+
+pokemonsFire.push('Magmar');
+console.log(`List of pokemons after the update are: ${pokemonsFire.length}`);
+console.table(pokemonsFire);
