@@ -59,7 +59,7 @@ const isActive = true;
 ```
 
 
-## 🔢 Arrays
+## 🔢 Arrays I
 
 **Declaration:**
 ```javascript
@@ -75,3 +75,37 @@ Key methods:
 	•	 includes()  - Check if exists
 	•	 .length  - Get size
 Access:  arr  (0-indexed)
+
+
+### Arrays II - Methods (Day 2)
+- `push(item)` → adds to end, returns new length
+- `unshift(item)` → adds to start, returns new length  
+- `pop()` → removes last, returns removed element
+- `shift()` → removes first, returns removed element
+- `splice(index, deleteCount)` → removes by position
+- `indexOf(item)` → returns index or -1
+- `includes(item)` → returns true/false
+- `forEach((element, index, array) => {})` → iterate
+
+
+
+## Day 2 - Arrays II (Jan 22, 2026)
+
+### Array Mutation Methods
+- `push(item)` → adds to end, returns new length
+- `unshift(item)` → adds to start, returns new length  
+- `pop()` → removes from end, returns removed element
+- `shift()` → removes from start, returns removed element
+- `splice(index, count)` → removes by position, returns removed elements
+
+### Array Search Methods
+- `indexOf(item)` → returns index or -1 if not found
+- `includes(item)` → returns true/false
+
+### Array Iteration
+- `forEach((element, index, array) => {})` → executes function for each element
+
+### Key Learning
+- push/unshift RETURN new length (number)
+- pop/shift RETURN removed element
+- Use `array.length - 1` for last element

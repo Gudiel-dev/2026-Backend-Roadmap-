@@ -101,7 +101,7 @@ console.log('---------------> Arrays II <---------------');
 console.log('==========================================='+'\n');
 //Properties and basic arrays' methods
 
-let pokemonsFire = ['Charmander', 'Charizard', 'Vulpix', 'Arcanine', 'Flareon', 'Moltres', 'Typhlosion', 'Torchic', 'Infernape', 'Emboar'];
+let pokemonsFire = ['Charmander', 'Charizard', 'Vulpix', 'Arcanine', 'Flareon', 'Typhlosion', 'Torchic', 'Infernape', 'Emboar'];
 // Gotta Catch 'Em All
 console.log(`I've captured: ${pokemonsFire.length} pokemons of fire!!`);
 console.table(pokemonsFire);
@@ -121,6 +121,49 @@ pokemonsFire.forEach((Element, index, arr) => {
 
 //Add an item to the array
 
-pokemonsFire.push('Magmar');
+let newFirePokemonList = pokemonsFire.push('Magmar');
 console.log(`List of pokemons after the update are: ${pokemonsFire.length}`);
+// console.table(console.table(pokemonsFire));
+console.log({ newFirePokemonList, pokemonsFire});
+
+newFirePokemonList = pokemonsFire.unshift('Moltres');
+console.log({newFirePokemonList});
 console.table(pokemonsFire);
+
+
+// Arreglo Original
+let items = ['Cuadrado', 'Esfera', 'Circulo'];
+
+console.log(`Exagono was added to the last`);
+let nuevaLongitud = items.push('Exagono');
+// console.log(nuevaLongitud, items);
+console.log(nuevaLongitud, items);
+
+console.log('Octagon was added to the start');
+nuevaLongitud = items.unshift('Octagon');
+console.log(nuevaLongitud, items);
+
+// Remove from end (pop)
+console.log('\n--- Removing last Pokemon ---');
+let removed = pokemonsFire.pop(); // quita 'Emboar'
+console.log(`Removed: ${removed}`);
+console.log(`New length: ${pokemonsFire.length}`);
+console.table(pokemonsFire);
+
+// Remove from start (shift)  
+console.log('\n--- Removing first Pokemon ---');
+removed = pokemonsFire.shift(); // quita 'Charmander'
+console.log(`Removed: ${removed}`);
+console.log(`New length: ${pokemonsFire.length}`);
+console.table(pokemonsFire);
+
+// splice() - remove by index
+console.log('\n--- Remove Vulpix (index 1) ---');
+let spliced = pokemonsFire.splice(1, 1); // quita 1 elemento en index 1
+console.log(`Removed:`, spliced);
+console.table(pokemonsFire);
+
+// indexOf + includes
+console.log('\n--- Search methods ---');
+console.log(`Index of Arcanine: ${pokemonsFire.indexOf('Arcanine')}`);
+console.log(`Has Pikachu?: ${pokemonsFire.includes('Pikachu')}`);
