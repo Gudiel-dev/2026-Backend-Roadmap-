@@ -167,3 +167,49 @@ console.table(pokemonsFire);
 console.log('\n--- Search methods ---');
 console.log(`Index of Arcanine: ${pokemonsFire.indexOf('Arcanine')}`);
 console.log(`Has Pikachu?: ${pokemonsFire.includes('Pikachu')}`);
+
+// ##################################
+// ##################################
+console.log('\n');
+console.log('\n');
+
+console.log('==========================');
+console.log('=====> Object literals <=====');
+console.log('==========================\n');
+
+
+let character = {
+    age: 17,
+    height: 174,
+    name: 'Vis',
+    lastName: 'Catenicus',
+    alive: true,
+    friends: {
+        friendName1: 'Aequa Claudius',
+        friendName2: 'Callidus Ericius',
+        friendName3: 'Emissa Corenius',
+    },
+    parents:['Ulciscor Telimus', 'Relucia Telimus'],
+    items:['a', 'b', 'c', 'd', 'e', 'f'],
+};
+console.log( character );
+//Picking up the name v1
+console.log(`Character's name V1: ${character.name}`);
+//Picking up the name v2
+console.log(`Character's name V2: ${character['name']}`);
+//Picking up the age
+console.log(`Vis' Age: ${character.age}`);
+//Friends
+console.log(`Friends:   
+            ${character.friends.friendName1}, 
+            ${character.friends.friendName2}, 
+            ${character.friends.friendName3},
+                        `);
+// Vis paretns
+console.log(`Vis mother's name: ${character.parents[1]} `)
+
+// items
+console.log(`Last item: ${character.items[character.items.length-1]}`);
+
+const x = 'alive';
+console.log('Alive', character[x]);
