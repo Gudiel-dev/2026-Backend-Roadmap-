@@ -173,9 +173,9 @@ console.log(`Has Pikachu?: ${pokemonsFire.includes('Pikachu')}`);
 console.log('\n');
 console.log('\n');
 
-console.log('==========================');
+console.log('=============================');
 console.log('=====> Object literals <=====');
-console.log('==========================\n');
+console.log('=============================\n');
 
 
 let character = {
@@ -191,6 +191,7 @@ let character = {
     },
     parents:['Ulciscor Telimus', 'Relucia Telimus'],
     items:['a', 'b', 'c', 'd', 'e', 'f'],
+    'last-book': 'The Strenght of the Few',
 };
 console.log( character );
 //Picking up the name v1
@@ -209,7 +210,39 @@ console.log(`Friends:
 console.log(`Vis mother's name: ${character.parents[1]} `)
 
 // items
-console.log(`Last item: ${character.items[character.items.length-1]}`);
+console.log(`Last item: ${character.items[character.items.length - 1]}`);
 
 const x = 'alive';
-console.log('Alive', character[x]);
+console.log('Alive', character[x] );
+
+console.log('Last Book:', character["last-book"]);
+
+
+
+console.log('\n')
+console.log('================================');
+console.log('=====> Object literals II <=====');
+console.log('================================\n');
+
+
+// To delete, we write it down before the property we wanna delete. 
+console.log('Deleting the property age:\n');
+delete character.age;
+console.log(character);
+
+console.log('\n');
+console.log('\n');
+
+character.isHero = true;
+
+console.log('Entries pares');
+const entriesPares = Object.entries( character );
+console.log( entriesPares);
+
+Object.freeze( character );
+
+
+const propiedades = Object.getOwnPropertyNames( character );
+const valores = Object.values( character );
+console.log('Nombres de las propiedades del objeto');
+console.log( { propiedades, valores } );
